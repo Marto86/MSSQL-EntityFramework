@@ -1,2 +1,4 @@
+#This repos are only from exercises in SoftUni
 # DataBases
-SQL and EntityFramewor
+SQL and EntityFramework
+
