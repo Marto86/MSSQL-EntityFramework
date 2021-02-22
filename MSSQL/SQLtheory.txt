@@ -1,0 +1,606 @@
+Databases and RDBMS
+A database is an organized collection of information​
+It imposes rules on the contained data​
+Relational storage first proposed by Edgar Codd in 1970​
+A Relational Data Base Management System provides ​
+tools to manage the database​
+It parses requests from the user and takes the ​
+appropriate action​
+The user doesn't have direct access to the stored data​
+
+
+SQL Server Architecture​
+Logical Storage​
+Instance​
+Database​
+Schema​
+Table​
+Physical Storage​
+Data Files and Log files​
+Data Pages​
+
+Database Table Elements
+The table is the main building block of any database​
+Each row is called a record or entity​
+Columns (fields) define the type of data they contain​
+
+Structured Query Language​
+To communicate with the Engine we use SQL​
+Declarative language​
+Logically divided in four sections​
+Data Definition – describe the structure of our data​
+Data Manipulation – store and retrieve data​
+Data Control – define who can access the data​
+Transaction Control – bundle operations and allow rollback 
+
+Data Types in SQL Server
+Numeric​
+BIT (1-bit), TINYINT (8-bit), SMALLINT (16-bit)​
+INT (32-bit), BIGINT (64-bit)​
+FLOAT, REAL, DECIMAL(precision, scale)​
+Textual​
+CHAR(size) – fixed size string​
+VARCHAR(size) – variable size string​
+NCHAR(size) – Unicode fixed size string​
+NVARCHAR(size) – Unicode variable size string​
+Binary data​
+BINARY(size) – fixed length sequence of bits​
+VARBINARY(size) – a sequence of bits, 1-8000 bytes or MAX (2GB)​
+Date and time​
+DATE – date in range 0001-01-01 through 9999-12-31​
+DATETIME – date and time with precision of 1/300 sec​
+DATETIME2 –  type that has a larger date range​
+SMALLDATETIME – date and time (1 minute precision)​
+TIME – defines a time of a day (no time zone)​
+DATETIMEOFFSET – date and time that has time zone​
+
+Creating Tables 
+A Primary Key is used to uniquely identify and index records​
+Identity – The value in the column is automatically ​
+incremented when a new record is added​
+These values cannot be assigned manually​
+Identity Seed – the initial number (1 by default)​
+Identity Increment – how much each consecutive value is ​
+incremented​
+
+SQL Queries​
+Queries provide greater control and flexibility​
+To create a database using SQL:​
+SQL keywords are traditionally capitalized​
+
+Summary​
+RDBMS store and manage data​
+Table relations reduce repetition and complexity​
+Table columns have fixed types​
+We can use Management Studio to create and customize tables​
+SQL provides greater control over actions​
+
+CRUD
+What Are SQL and T-SQL?​
+Structured Query Language​
+Declarative language​
+Close to regular English​
+Supports definition, manipulation and access control of records​
+Transact-SQL (T-SQL) – SQL Server's version of SQL​
+Supports control flow (if statements, loops)​
+Designed for writing logic inside the database​
+
+Use DISTINCT to eliminate duplicate results​
+Filter rows by specific conditions using the WHERE clause​
+Other logical operators can be used for greater control​
+Use concatenation to display first and last names as one field​
+Views are named (saved) queries​
+Simplify complex queries​
+Limit access to data for certain users​
+Example: Get employee names and salaries, by department​
+
+SUMMARY
+​T-SQL is the language of SQL Server​
+Queries provide a flexible and powerful​
+method to manipulate records​
+Views allow us to store queries for easier use​
+
+
+DB Design: Identify Entities​
+Entity tables represent objects from the real world​
+Most often they are nouns in the specification​
+Columns are clarifications for the entities in the text of the ​specification
+Always define an additional column for the primary key​
+Don't use an existing column (for example SSN)​
+Must be an integer number​
+Must be declared as a primary key​
+Use IDENTITY to implement auto-increment​
+Put the primary key as a first column​
+Exceptions​
+Entities that have well known ID, e.g. countries (BG, DE, US) ​
+and currencies (USD, EUR, BGN)​
+Relationships are dependencies between the entities:​
+"Students are trained in courses"  many-to-many relationship​
+"Courses are held in towns"  many-to-one (or many-to-many) relationship​
+
+Database Normalization​
+It is a technique of organizing the data in the ​
+database​
+Normalization is a systematic approach of ​
+decomposing tables to eliminate data redundancy​
+(repetition) and undesirable characteristics like​
+insertion, update and deletion anomalies​
+It is a multi-step process that puts data into tabular ​
+form removing duplicated data from the relation ​
+tables​
+
+First Normal Form (1NF)​
+Table should only have single(atomic) valued attributes/columns​
+Values stored in a column should be of the same domain (same type)​
+All the columns in a table should have unique names​
+The order in which data is stored should not matter​
+
+Second Normal Form (2NF)​
+The table should be in the First Normal form​
+It shouldn't have Partial Dependency (dependency on part of the primary key)​
+
+Third Normal Form (3NF)​
+The table is in the Second Normal form​
+It doesn't have Transitive Dependency​
+
+Relationships between tables are based on interconnections: ​
+primary key  foreign key​
+Primary Key​
+Identity (auto-increment)​
+Unique constraint – no repeating values in entire table​
+The foreign key is an identifier of a record located in another table ​
+(usually a primary key)​
+Using relationships, we refer to data instead of repeating data​
+Country name is not repeated, it is referred to by its primary key​
+
+Relations
+One-to-many – e.g. country / towns​
+One country has many towns​
+
+Many-to-many – e.g. student / course​
+One student has many courses​
+One course has many students​
+
+One-to-one – e.g. example driver / car​
+One driver has only one car​
+Rarely used​
+
+
+JOIN Statements​
+With a JOIN statement, we can get data from two tables ​
+simultaneously​
+JOINs require at least two tables and a "join condition"​
+
+Cascade Delete​
+Cascade can be either Delete or Update.​
+Use Cascade Delete when:​
+The related entities are meaningless without the "main" one​
+Do not use Cascade Delete when:​
+You perform a "logical delete"​
+Entities are marked as deleted (but not actually deleted)​
+In more complicated relations, cascade delete won't work with ​
+circular references​
+
+Cascade Update
+Use Cascade Update when:​
+The primary key is not identity (not auto-increment) and therefore it can be changed​
+Best used with unique constraint​
+Do not use Cascade Update when:​
+
+Relational Schema​
+Relational schema of a DB is the collection of:​
+The schemas of all tables​
+Relationships between the tables​
+Any other database objects (e.g. constraints)​
+The relational schema describes the structure of the database​
+Doesn't contain data, but metadata​
+Relational schemas are graphically displayed in ​
+Entity / Relationship diagrams (E/R Diagrams)​
+The primary is identity (auto-increment)​
+Cascading can be avoided using triggers or procedures.​
+
+Summary​
+How to design multiple tables with related data?​
+What are the types of table relations?​
+Cascading – pros and cons?​
+How can we visualize all of our relations​
+in a database?
+
+
+SQL Functions​
+Aggregate functions​
+It perform a calculation on a set of values and return a ​
+single value​
+Examples: AVG, COUNT, MIN, MAX, SUM​
+
+Analytic functions​
+It compute an aggregate value based on a group of rows​
+Unlike aggregate functions, analytic functions can ​
+return multiple rows for each group​
+
+Ranking functions​
+Returns a ranking value for each row in a partition​
+RANK, ROW_NUMBER, DENSE_RANK, NTILE (OVER)​
+
+Rowset functions​
+Returns an object that can be used like table references in ​
+an statement​
+OPENDATASOURCE, OPENJSON, OPENXML, OPENROWSET​
+
+Scalar functions​
+Operate on a single value and then return a single value. ​
+Scalar functions can be used wherever an expression is valid​
+
+SUBSTRING – extracts a part of a string​
+​REPLACE – replaces a specific string with another​
+LTRIM & RTRIM – remove spaces from either side of string​
+​LEN – counts the number of characters​
+DATALENGTH – gets the number of used bytes​
+LEFT & RIGHT – get characters from the beginning or the ​
+end of a string​
+LOWER & UPPER – change letter casing​
+REVERSE – reverses order of all characters in a string​
+​REPLICATE – repeats a string​
+​FORMAT – format a value with a valid .NET format string​
+CHARINDEX – locates a specific pattern (substring) in a string​
+​STUFF – inserts a substring at a specific position​
+PI – gets the value of Pi as a float (15 –digit precision)​
+ABS – absolute value​
+SQRT – square root (the result will be float)​
+SQUARE – raise to power of two​
+POWER – raises value to the desired exponent​
+ROUND – obtains the desired precision​
+Negative precision rounds characters before the decimal point​
+FLOOR & CEILING – return the nearest integer​
+SIGN – returns 1, -1 or 0, depending on the value of the sign​
+RAND – gets a random float value in the range [0, 1]​ If Seed is not specified, it will be assigned randomly​
+DATEPART – extract a segment from a date as an integer​
+DATEDIFF – finds the difference between two dates​
+DATENAME – gets a string representation of a date's part​
+​DATEADD – performs date arithmetic​ Part can be any part and format of date or time​
+​GETDATE – obtains the current date and time​
+EOMONTH – returns the last day of the month​
+CAST & CONVERT – conversion between data types​
+ISNULL – swaps NULL values with a specified default value​
+COALESCE – evaluates the arguments in order and returns the ​current value of the first expression that initially does not ​evaluate to NULL​
+OFFSET & FETCH – get only specific rows from the result set​
+ROW_NUMBER – always generate unique values without any   gaps, even if there are ties​
+RANK – can have gaps in its sequence and when values are the same, they get the same rank​
+DENSE_RANK – returns the same rank for ties, but it doesn’t    have any gaps in the sequence​
+NTILE – Distributes the rows in an ordered partition into a specified number of groups​
+
+Wildcards are used with WHERE for partial filtration​
+ESCAPE – specify a prefix to treat special characters as normal​
+
+Summary
+Various built-in functions​
+String functions - CONCAT, LEFT/RIGHT, ​
+REPLACE, etc.​
+Math functions - PI, ABS, POWER, ROUND, etc.​
+Date functions - DATEPART, DATEDIFF, ​
+GETDATE, etc.​
+Using Wildcards, we can obtain results by ​
+partial string matches
+
+
+Types of Joins​
+Inner joins​
+Left, right and full outer joins​
+Cross joins​
+
+Inner join​
+Join of two tables returning only rows matching the join condition​
+
+Left (or right) outer join​
+Returns the results of the inner join as well as unmatched rows          from the left (or right) table​
+
+Full outer join​
+Returns the results of an inner join along with all unmatched rows​
+
+Subqueries​ - a query’s result as data for another query​
+
+Temporary Tables
+Temporary tables are stored in tempdb​
+Automatically deleted when they are no longer used​
+Table variables (DECLARE @t TABLE) ​
+Visible only to the connection that creates it​
+
+Local temporary tables (CREATE TABLE #t)​
+Visible only to the connection that creates it​
+
+Global temporary tables (CREATE TABLE ##t)​
+Visible to everyone​
+Deleted when all connections that have referenced them have closed​
+
+Tempdb permanent tables (USE tempdb CREATE TABLE t)​
+Visible to everyone. Deleted when the server is restarted​
+
+SUMMARY
+Joins​
+​Subqueries are used to nest queries.​
+CTE's improve code reuse and​
+readability.​
+Indices improve SQL search performance​
+if used properly.​
+
+
+
+Indices​
+Indices speed up the searching of values in a certain column ​
+or group of columns​
+Usually implemented as B-trees​
+
+Indices can be built-in the table (clustered) or stored externally (non-clustered)​
+
+Adding and deleting records in indexed tables is slower!​
+Indices should be used for big tables only (e.g. 500 000 rows).​
+
+Clustered Indexes​
+Clustered index is actually the data itself​
+Very useful for fast execution of WHERE, ORDER BY and ​
+GROUP BY clauses.​
+Maximum 1 clustered index per table​
+If a table has no clustered index, ​
+its data rows are stored in an ​
+unordered structure (heap).​
+
+Non-Clustered Indexes​
+Useful for fast retrieving of a range of records​
+Maintained in a separate structure in the DB​
+Tend to be much narrower than the base table​
+Can locate the exact record(s) with less I/O​
+Has at least one more intermediate level than the clustered ​
+index​
+Much less valuable if a table doesn’t have a clustered index​
+A non-clustered index has pointers to the actual data rows ​
+(pointers to the clustered index if there is one).​
+
+Grouping
+Grouping allows receiving data into separate groups ​
+based on a common property​
+GROUP BY allows you to get each separate group and use ​
+an "aggregate" function over it (like Average, Min or Max):​
+DISTINCT allows you to get all unique values:​
+
+Having Clause​
+The HAVING clause is used to filter data based on ​
+aggregate values ​
+We cannot use it without grouping first​
+Aggregate functions (MIN, MAX, SUM etc.) are ​
+executed only once​
+Unlike HAVING, WHERE filters rows before ​
+aggregation​
+
+SUMMARY
+Grouping by Shared Properties​
+Aggregate Functions​
+Having Clause​
+
+
+
+Types of User-Defined Functions
+Scalar functions​
+Similar to the built-in functions​
+Returns a single value​
+
+Table-valued functions​
+Similar to a view with parameters​
+Returns a table as a result of a single SELECT statement​
+Inline table-valued function (TVF)​
+Multi-statement table-valued function (MSTVF)​
+
+Functions: Limitations​
+User-defined functions cannot be used to perform ​
+actions that modify the database state​
+User-defined functions cannot return multiple result sets​
+User-defined functions cannot make use of dynamic SQL or temp tables. Table variables are allowed.​
+User-defined functions can be nested up to 32 levels​
+Error handling is restricted in a user-defined function ​
+UDF does not support TRY...CATCH, @ERROR or ​
+RAISERROR​
+
+
+What Are Stored Procedures?​
+Stored procedures are named sequences of T-SQL statements.​
+Encapsulate repetitive program logic​
+Can accept input parameters​
+Can return output results​
+
+Benefits of stored procedures​
+Share application logic​
+Improved performance​
+Reduced network traffic​
+They can be used as a security mechanism​
+
+User-defined​
+Can be created in a user-defined database or in all system ​
+databases except the Resource database​
+Can be developed in either Transact-SQL or as a reference to a Microsoft .NET Framework method​
+
+Temporary​
+A form of user-defined procedures stored in tempdb​
+
+
+Error Throwing​ Error Handling
+THROW​
+Raises an exception and transfers execution to a CATCH block​
+Arguments:​
+error_number - INT (between 50000 and 2147483647)​
+message - NVARCHAR(2048)​
+state - TINYINT (between 0 and 255)​
+
+TRY...CATCH​
+SQL Statements can be enclosed in a TRY block. ​
+If an error occurs in the TRY block, control is passed to another​
+group of statements that is enclosed in a CATCH block​
+
+@@ERROR​
+Returns 0 if the previous Transact-SQL statement encountered ​
+no errors​
+Returns an error number if the previous statement encountered an error​
+@@ERROR is cleared and reset on each statement executed, ​
+check it immediately following the statement being verified, or ​
+save it to a local variable that can be checked later​
+
+Summary
+Functions allow for complex calculations​
+Usually return a scalar value​
+Stored Procedures allow us to save time by​
+Shortening code​
+Simplifying complex tasks​
+
+
+Transactions​
+A Transaction is a sequence of actions (database operations) ​
+executed as a whole:​
+Either all of them complete successfully or none of them do​
+Examples:​
+A bank transfer from one account into another (withdrawal + ​
+deposit)​
+If either the withdrawal or the deposit fails the whole operation is cancelled​
+
+Tansactions behaviour
+Transactions guarantee the consistency and the integrity of ​
+the database​
+All changes in a transaction are temporary​
+Changes are persisted when a COMMIT is executed​
+At any time, all changes can be canceled by ROLLBACK​
+All changes are persisted at once​
+As long as COMMIT is called​
+Some actions fail to complete​
+The application software or database server crashes​
+The user cancels the action while it’s in progress​
+Interference from another transaction​
+What happens if several transfers run for the same account at ​
+the same time?​
+
+Transaction Properties​
+Modern DBMS servers have built-in transaction support​
+Implement "ACID" transactions​
+MS SQL Server, Oracle, MySQL, PostgreSQL, etc.​
+
+ACID means:​
+Atomicity​
+Consistency ​
+Isolation​
+Durability​
+
+Atomicity​
+Atomicity means that:​
+Transactions execute as a whole​
+DBMS guarantees that either all of the​
+operations are performed or none of them​
+Example: Transferring funds between bank accounts​
+Either withdraw + deposit both succeed, or none of them do​
+In case of failure, the database stays unchanged​
+
+Consistency​
+Consistency means that:​
+The database has a legal state in both the transaction’s beginning and its end​
+Only valid data will be written to the DB​
+Transaction cannot break the rules of the database​
+Primary keys, foreign keys, check constraints, data types…​
+Consistency example:​
+Transaction cannot end with a duplicate primary key in a table​
+
+
+Isolation​
+Isolation means that:​
+Multiple transactions running at the same time do not impact each other's execution​
+Transactions don’t see other transactions’ uncommitted changes​
+Isolation level defines how deep transactions isolate from one another​
+Isolation example:​
+If two or more people try to buy the last copy of a product, only one of them will succeed​
+
+
+Durability
+Durability means that:​
+If a transaction is committed it becomes persistent​
+Cannot be lost or undone​
+Ensured by the use of database transaction logs​
+Durability example:​
+After funds are transferred and committed, the power supply at the DB server is lost​
+Transaction stays persistent (no data is lost)​
+
+Triggers
+Triggers are very much like stored procedures​
+Called in case of a specific event​
+We do not call triggers explicitly​
+Triggers are attached to a table​
+Triggers are fired when a certain SQL statement is executed against ​
+the contents of the table​
+Syntax:​
+AFTER INSERT/UPDATE/DELETE​
+INSTEAD OF INSERT/UPDATE/DELETE​
+
+AFTER Trigger is executed right after an event is fired​
+INSTEAD OF Trigger completely replaces an event action from ​
+happening​
+
+There are three different events that can be applied within a ​
+trigger:​
+
+After Triggers
+Defined by the keyword FOR​
+
+Instead of Triggers​
+Defined by using INSTEAD OF
+
+
+Database Security: SQL Server​
+SQL Server has two layers of database security:​
+Fixed Server Roles​
+sysadmin, bulkadmin, dbcreator, securityadmin​
+Fixed Database Roles​
+db_owner, db_securityadmin, db_accessadmin​
+db_backupoperator, db_ddladmin​
+db_datareader/db_datawriter​
+
+Custom Roles​
+SQL Server lets us create custom roles​
+Collection of privileges (permissions)​
+Fine control over permissions​
+Can use one role for multiple users (groups)​
+Makes auditing operations easier​
+
+Permissions
+CONTROL SERVER/DATABASE​
+Gives all permissions on the server/database​
+
+TAKE OWNERSHIP​
+Enables the grantee to take ownership of a securable​
+
+VIEW CHANGE TRACKING​
+Manage change tracking on schemas and tables​
+
+VIEW DEFINITION​
+Enables the grantee to access metadata​
+
+EXECUTE​
+To run procedures, scalar and aggregate functions​
+
+
+ALTER​
+Lets a role create, alter, and drop objects from the schema​
+
+REFERENCES​
+Lets the role create FOREIGN KEY constraints​
+
+SELECT/DELETE/INSERT/UPDATE​
+Grant access to CRUD Operations​
+Can be granted on database, schema and object level​
+Individual tables, views and columns can be targeted​
+
+
+Summary
+Transactions give our operations stability​
+Operation Integrity​
+Solving the concurrent operation problem​
+The ACID model is implemented in most RDBMS​
+Triggers apply a given behavior when a condition is hit​
+Gives us temporary INSERTED and DELETED tables​
+Security in SQL Server can be finely controlled​
+Using fixed server roles and fixed database roles​
+Custom roles control permissions even more finely​
+
+

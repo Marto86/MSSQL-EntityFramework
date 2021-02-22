@@ -1,0 +1,1 @@
+Scaffold-DbContext -Connection "Server=.;Database=SoftUni;Integrated Security=True" -Provider Microsoft.EntityFrameworkCore.SqlServer -OutputDir Data
