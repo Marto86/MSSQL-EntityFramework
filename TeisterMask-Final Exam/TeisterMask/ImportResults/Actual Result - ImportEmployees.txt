@@ -1,0 +1,89 @@
+Invalid data!
+Invalid data!
+SuccessfullyImportedEmployee, jstanett0, 5
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedEmployee, mmcellen1, 15
+Invalid data!
+Invalid data!
+SuccessfullyImportedEmployee, cmartinho2, 5
+SuccessfullyImportedEmployee, mdilucia3, 9
+Invalid data!
+Invalid data!
+SuccessfullyImportedEmployee, dnapton4, 5
+SuccessfullyImportedEmployee, ostollsteimer5, 12
+Invalid data!
+SuccessfullyImportedEmployee, codaly6, 7
+Invalid data!
+SuccessfullyImportedEmployee, qfilkin7, 4
+Invalid data!
+Invalid data!
+SuccessfullyImportedEmployee, rkitchingham8, 5
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedEmployee, kmurrow9, 11
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedEmployee, mbarendtsena, 10
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedEmployee, pnicolsonb, 9
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedEmployee, olathleiffurec, 14
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedEmployee, btorrejond, 9
+SuccessfullyImportedEmployee, mdivere, 5
+Invalid data!
+Invalid data!
+SuccessfullyImportedEmployee, tridolfif, 11
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedEmployee, sthynneg, 5
+Invalid data!
+Invalid data!
+SuccessfullyImportedEmployee, gkeemsh, 3
+Invalid data!
+SuccessfullyImportedEmployee, ehawtoni, 3
+Invalid data!
+SuccessfullyImportedEmployee, nbremenj, 14
+Invalid data!
+Invalid data!
+SuccessfullyImportedEmployee, emccarryk, 6
+Invalid data!
+Invalid data!
+SuccessfullyImportedEmployee, mkyncll, 6
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedEmployee, mobispom, 7
+Invalid data!
+SuccessfullyImportedEmployee, lmarquissn, 9
+SuccessfullyImportedEmployee, ocoolsono, 7
+Invalid data!
+SuccessfullyImportedEmployee, jbehlingp, 13
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedEmployee, pclaffeyq, 13
+SuccessfullyImportedEmployee, bbetoniar, 8
+Invalid data!
+SuccessfullyImportedEmployee, hgreenhaughs, 5
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedEmployee, ymarcumt, 14

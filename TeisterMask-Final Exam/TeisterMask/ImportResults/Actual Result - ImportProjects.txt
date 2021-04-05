@@ -1,0 +1,216 @@
+Invalid data!
+Invalid data!
+SuccessfullyImportedProject,America, 2
+SuccessfullyImportedProject,Hyster-Yale, 10
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedProject,Vical, 0
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedProject,PPL Corporation, 0
+SuccessfullyImportedProject,Land Systemttttttttttttttttttttttttttt, 7
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedProject,Cypress Energy, 1
+Invalid data!
+SuccessfullyImportedProject,Boston, 2
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedProject,TESARO, Inc., 5
+Invalid data!
+SuccessfullyImportedProject,Net 1 UEPS Technologies, Inc., 2
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedProject,L Brands, Inc., 0
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedProject,Blackrock MuniHoldings, 1
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedProject,Postman, 0
+SuccessfullyImportedProject,VivoPower PLC, 2
+Invalid data!
+Invalid data!
+SuccessfullyImportedProject,Arbor Trust, 0
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedProject,Greenbrier Companies, 3
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedProject,BBVA Banco Frances S.A., 0
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedProject,First22, 0
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedProject,Brandywine, 1
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedProject,America Corporation, 0
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedProject,SCYNEXIS, Inc., 3
+Invalid data!
+SuccessfullyImportedProject,TearLab Corporation, 0
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedProject,Tekla Life, 0
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedProject,First Trust Senior Loan Fund ETF, 1
+Invalid data!
+SuccessfullyImportedProject,New Oriental, 4
+Invalid data!
+Invalid data!
+SuccessfullyImportedProject,Two River Bancorp, 0
+Invalid data!
+Invalid data!
+SuccessfullyImportedProject,Perceptron, Inc., 1
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedProject,National Beverage Corp., 1
+SuccessfullyImportedProject,China Lending Corporation, 1
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedProject,American National Bankshares, Inc., 0
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedProject,Sumitomo Mitsui, 0
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedProject,Public Storage, 2
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedProject,Cellectis S.A., 0
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedProject,SS S.A., 1
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedProject,Key Energy Services, Inc., 2
+SuccessfullyImportedProject,Alamos Gold Inc., 2
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedProject,Atlas Air, 0
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedProject,U.S. Bancorp, 4
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedProject,Medley Capital Corporation, 0
+Invalid data!
+SuccessfullyImportedProject,Magna Inc., 0
+Invalid data!
+Invalid data!
+SuccessfullyImportedProject,Caleres, Inc., 0
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedProject,Interpace 22., 0
+Invalid data!
+Invalid data!
+Invalid data!
+Invalid data!
+SuccessfullyImportedProject,USANA Health Sciences, Inc., 4
+Invalid data!
+Invalid data!
+Invalid data!
