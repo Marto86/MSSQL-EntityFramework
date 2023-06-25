@@ -1,0 +1,11 @@
+USE SoftUni1
+
+SELECT TownID,Name
+FROM Towns
+WHERE LEFT(Name, 1) IN ('M', 'K', 'B', 'E')
+ORDER BY Name
+
+SELECT TownID,Name
+FROM Towns
+WHERE LEFT(Name, 1) like '[MKBE]'
+ORDER BY Name

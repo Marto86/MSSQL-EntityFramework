@@ -1,0 +1,5 @@
+use SoftUni1
+
+SELECT FirstName,LastName
+FROM Employees
+WHERE FirstName like 'SA%'

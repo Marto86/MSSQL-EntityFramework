@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Dto\Import\**" />
+    <Compile Remove="Dto\NewFolder\**" />
+    <EmbeddedResource Remove="Dto\Import\**" />
+    <EmbeddedResource Remove="Dto\NewFolder\**" />
+    <None Remove="Dto\Import\**" />
+    <None Remove="Dto\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Dto\Import\ImportTrainDto.cs" />
+    <Compile Include="Dto\Import\ImportTrainSeatDto.cs" />
+    <Compile Include="Dto\Import\ImportSeatingClassDto.cs" />
+    <Compile Include="Dto\Import\ImportStationDto.cs" />
+    <Compile Include="Dto\Import\ImportTripDto.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.2.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Stations.Data\Stations.Data.csproj" />
+    <ProjectReference Include="..\Stations.Models\Stations.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Dto\Export\" />
+  </ItemGroup>
+
+</Project>

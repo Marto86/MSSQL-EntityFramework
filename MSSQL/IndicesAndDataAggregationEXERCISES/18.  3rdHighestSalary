@@ -1,0 +1,23 @@
+USE SoftUni1
+
+
+SELECT DepartmentID, MaxSalary
+FROM (SELECT e.DepartmentID,
+            MAX(e.Salary) AS MaxSalary,
+             DENSE_RANK() OVER (PARTITION BY DepartmentID ORDER BY e.Salary DESC)
+                 AS SalaryRank
+      FROM Employees as e
+      GROUP BY e.DepartmentID, e.Salary) AS SalaryRankingQuery
+WHERE SalaryRankingQuery.SalaryRank = 3
+
+/*SecondSolution*/
+SELECT DISTINCT DepartmentID, FORMAT(Salary, 'F2') AS ThirdHightestSalary
+FROM (SELECT DepartmentID,
+             Salary,
+             DENSE_RANK() OVER (PARTITION BY DepartmentID ORDER BY Salary DESC)
+                 AS SalaryRank
+      FROM Employees
+      ) AS SalaryRankingQuery
+WHERE SalaryRank = 3
+
+
